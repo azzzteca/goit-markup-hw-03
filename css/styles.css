@@ -1,0 +1,223 @@
+/* Переменные */
+:root {
+  --title-text: #212121;
+  --main-text: #757575;
+  --nav-text: #212121;
+  --contacts-text: #757575;
+  --firm-color: #2196F3;
+  --buttons-background: #F5F4FA;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  background-color: #2F303A ;
+}
+
+/* Главная страница */
+
+/* Лого */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: var(--firm-color, blue);
+}
+
+.logo-studio-header {
+  color: #000000;
+}
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+/* Навигация */
+
+.nav-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links > li {
+  background-color: tomato;
+  outline: 3px solid yellow;
+}
+
+
+.nav-links .link {
+  color: var(--nav-text, black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.nav-links .link:hover,
+.nav-links .link:focus {
+  color: var(--firm-color, blue);
+}
+
+.nav-links .link.current {
+  color: var(--firm-color, blue);
+}
+
+/* Контакты в шапке */
+.contacts {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts .contact {
+  color: var(--contacts-text, grey) ;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.contacts .contact:hover,
+.contacts .contact:focus {
+  color: var(--firm-color, blue);
+}
+
+/* Герой */
+.hero {
+  background-color: #2F303A;
+}
+
+.hero .title {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.hero .btn {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: var(--firm-color, blue);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: #ffffff;
+  color: var(--firm-color, blue);
+}
+
+/*  */
+.main-title {
+  color: var(--title-text, black);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.advantages .title {
+  color: var(--title-text, black);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.advantages .advantage {
+  color: var(--main-text, grey);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Наша команда */
+
+.team .member {
+  color: var(--title-text, black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.team .skill {
+  color: var(--main-text, grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Подвал */
+.address {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.address .mail,
+.address .tel {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address .mail:hover,
+.address .mail:focus,
+.address .tel:hover,
+.address .tel:focus{
+  color: var(--firm-color, blue);
+}
+
+/* Старница портфолио */
+
+.filter-buttons .btn {
+  background-color: var(--buttons-background, #ffffff);
+  font-family: inherit;
+  border: none;
+  color: var(--nav-text, #000000);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}  
+
+.filter-buttons .btn:hover,
+.filter-buttons .btn:focus {
+  background-color: var(--firm-color, blue);
+  color: #ffffff;
+}
+ 
+.projects .project {
+  color: var(--title-text);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.0;
+}
+
+.projects .project-info {
+  color: var(--main-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
