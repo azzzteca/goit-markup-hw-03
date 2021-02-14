@@ -9,27 +9,49 @@
 
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
 }
 
-ul {
+.address {
+  font-style: normal; 
+}
+
+.list {
   list-style: none;
-}
-
-address {
-  font-style: normal;
-}
-
-footer {
-  background-color: #2F303A ;
+  margin: 0;
+  padding: 0;
 }
 
 /* Главная страница */
 
+/* Хедер */
+.container {
+  /* display: flex; */
+  /* align-items: center; */
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  outline: 1px solid tomato;
+}
+
 /* Лого */
 .logo {
+
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -51,19 +73,30 @@ footer {
 
 /* Навигация */
 
-.nav-links {
+.main-nav {
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-.nav-links > li {
-  background-color: tomato;
-  outline: 3px solid yellow;
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 
+/* Селектор соседа - старая версия */
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 
-.nav-links .link {
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
   color: var(--nav-text, black);
   font-size: 14px;
   font-weight: 500;
@@ -71,24 +104,30 @@ footer {
   text-decoration: none;
 }
 
-.nav-links .link:hover,
-.nav-links .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--firm-color, blue);
 }
 
-.nav-links .link.current {
+.site-nav .link.current {
   color: var(--firm-color, blue);
 }
 
 /* Контакты в шапке */
 .contacts {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 .contacts .contact {
-  color: var(--contacts-text, grey) ;
+  display: block;
+
+
+  color: var(--contacts-text, grey);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
@@ -103,18 +142,26 @@ footer {
 /* Герой */
 .hero {
   background-color: #2F303A;
+  text-align: center;
+  margin-bottom: 129px;
 }
 
-.hero .title {
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
 }
 
-.hero .btn {
+.hero-btn {
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   font-family: inherit;
   color: #ffffff;
   background-color: var(--firm-color, blue);
@@ -129,13 +176,25 @@ footer {
   color: var(--firm-color, blue);
 }
 
-/*  */
+/* Наши преимущества */
 .main-title {
+  margin-top: 0;
+
   color: var(--title-text, black);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 9.01px;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages .title {
@@ -153,16 +212,55 @@ footer {
   line-height: 1.7;
 }
 
+.our-advantages {
+  margin-bottom: 88px;
+}
+
+/* Наши услуги */
+
+.main-title.services {
+  margin-bottom: 56px;
+}
+
+.container.services {
+  margin-bottom: 94px;
+}
+
 /* Наша команда */
 
+.container.team {
+  background-color: var(--buttons-background);
+  margin-bottom: 94px;
+  margin-top: 0;
+}
+
+.main-title.team {
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.card-team {
+  background-color: white;
+}
+
 .team .member {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text, black);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
 }
 
+.team .image {
+  margin-bottom: 30px;
+}
+
 .team .skill {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--main-text, grey);
   font-size: 16px;
   font-weight: 400;
@@ -170,6 +268,21 @@ footer {
 }
 
 /* Подвал */
+
+.bgd-footer {
+  background-color: #2F303A ;
+}
+
+.container.footer {
+  min-height: 252px;
+}
+
+.full-footer {
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+}
+
 .address {
   color: #ffffff;
   font-size: 14px;
