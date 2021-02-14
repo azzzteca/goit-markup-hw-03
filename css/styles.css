@@ -29,24 +29,33 @@ body {
 }
 
 .list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.main-title {
+  margin-top: 0;
+
+  color: var(--title-text, black);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 /* Главная страница */
 
 /* Хедер */
 .container {
-  /* display: flex; */
-  /* align-items: center; */
-
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-
-  outline: 1px solid tomato;
 }
+
 
 /* Лого */
 .logo {
@@ -72,6 +81,10 @@ body {
 }
 
 /* Навигация */
+.container.page-head {
+  display: flex;
+  align-items: center;
+}
 
 .main-nav {
   display: flex;
@@ -88,9 +101,6 @@ body {
   margin-left: 50px;
 }
 
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .site-nav .link {
   display: block;
@@ -142,14 +152,24 @@ body {
 /* Герой */
 .hero {
   background-color: #2F303A;
+}
+
+.container-hero {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 93px;
+
   text-align: center;
-  margin-bottom: 129px;
 }
 
 .hero-title {
-  margin-top: 0;
+  padding-top: 200px;
   margin-bottom: 30px;
-
+  
   color: #ffffff;
   text-transform: uppercase;
   font-size: 44px;
@@ -177,17 +197,26 @@ body {
 }
 
 /* Наши преимущества */
-.main-title {
-  margin-top: 0;
 
-  color: var(--title-text, black);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
+.advantages.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-bottom: 88px;
 }
 
-.title {
+.power .advantage {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advantages.list .power {
+  flex-basis: calc(100%/4 - 30px);
+  margin-left: 30px;
+}
+
+.power .title {
   margin-top: 0;
   margin-bottom: 9.01px;
 }
@@ -218,12 +247,23 @@ body {
 
 /* Наши услуги */
 
+.service.list {
+  display: flex;
+  flex-basis: calc(100%/3 - 30px);
+  margin-left: -30px;
+  margin-bottom: 0;
+}
+
+.service-item {
+  margin-left: 30px;
+}
+
 .main-title.services {
   margin-bottom: 56px;
 }
 
 .container.services {
-  margin-bottom: 94px;
+  margin-bottom: 135px;
 }
 
 /* Наша команда */
@@ -232,6 +272,21 @@ body {
   background-color: var(--buttons-background);
   margin-bottom: 94px;
   margin-top: 0;
+
+  text-align: center;
+}
+
+.team.list {
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: -30px;
+
+}
+
+.team-card {
+  margin-left: 30px;
+  
+  background-color: white;
 }
 
 .main-title.team {
@@ -239,9 +294,6 @@ body {
   padding-top: 94px;
 }
 
-.card-team {
-  background-color: white;
-}
 
 .team .member {
   margin-top: 0;
@@ -269,25 +321,32 @@ body {
 
 /* Подвал */
 
-.bgd-footer {
+.footer {
   background-color: #2F303A ;
 }
 
-.container.footer {
-  min-height: 252px;
+.footer-items {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 60px;
+}
+
+.address {
+  margin-top: 20px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
 }
 
 .full-footer {
   padding-top: 60px;
-  margin-bottom: 20px;
-
 }
 
-.address {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
+.footer-item + .footer-item{
+  margin-top: 9px;
 }
 
 .address .mail,
@@ -305,7 +364,32 @@ body {
 
 /* Старница портфолио */
 
+/* Фильтры наших работ - кнопки */
+.container .filter-btn {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.filter-buttons.list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 34px;
+  justify-content: center;
+
+}
+
+.btn-item + .btn-item {
+  margin-left: 8px;
+}
+
+
 .filter-buttons .btn {
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+
   background-color: var(--buttons-background, #ffffff);
   font-family: inherit;
   border: none;
@@ -321,6 +405,35 @@ body {
   color: #ffffff;
 }
  
+/* Наши работы */
+
+.projects.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+
+  text-align: left;
+}
+
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.projects.list .project {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.project-info {
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
 .projects .project {
   color: var(--title-text);
   font-size: 18px;
