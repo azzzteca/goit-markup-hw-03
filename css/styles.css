@@ -66,6 +66,8 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+
+  padding: 24px 0 25px 0;
 }
 
 .logo-web {
@@ -168,6 +170,7 @@ body {
 
 .hero-title {
   padding-top: 200px;
+  margin-top: 0;
   margin-bottom: 30px;
   
   color: #ffffff;
