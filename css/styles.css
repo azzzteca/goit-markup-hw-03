@@ -160,22 +160,23 @@ img {
 /* Герой */
 .hero {
   background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+
 }
 
 .container-hero {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 
   text-align: center;
 }
 
 .hero-title {
-  padding-top: 200px;
   padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
@@ -207,6 +208,11 @@ img {
 }
 
 /* Наши преимущества */
+
+.our-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .advantages.list {
   display: flex;
@@ -250,10 +256,6 @@ img {
   line-height: 1.7;
 }
 
-.our-advantages {
-  margin-bottom: 94px;
-}
-
 /* Наши услуги */
 
 .service.list {
@@ -273,7 +275,7 @@ img {
 }
 
 .our-services {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* Наша команда */
@@ -339,17 +341,18 @@ img {
 
 .footer {
   background-color: #2F303A ;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 
 .footer-items {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 60px;
 }
 
 .address {
-
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -357,7 +360,6 @@ img {
 }
 
 .full-footer {
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -389,8 +391,8 @@ img {
 /* Фильтры наших работ - кнопки */
 
 .filter-our-works {
-  margin-top: 71px;
-  margin-bottom: 94px;
+  padding-top: 71px;
+  padding-bottom: 94px;
 }
 
 .container .filter-btn {
