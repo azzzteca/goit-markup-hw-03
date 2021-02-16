@@ -24,6 +24,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+}
+
 .address {
   font-style: normal; 
 }
@@ -66,7 +70,9 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+}
 
+.logo.header {
   padding: 24px 0 25px 0;
 }
 
@@ -163,15 +169,16 @@ body {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 93px;
+  margin-bottom: 94px;
 
   text-align: center;
 }
 
 .hero-title {
   padding-top: 200px;
+  padding-bottom: 30px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   
   color: #ffffff;
   text-transform: uppercase;
@@ -206,7 +213,6 @@ body {
   flex-wrap: wrap;
 
   margin-left: -30px;
-  margin-bottom: 88px;
 }
 
 .power .advantage {
@@ -245,7 +251,7 @@ body {
 }
 
 .our-advantages {
-  margin-bottom: 88px;
+  margin-bottom: 94px;
 }
 
 /* Наши услуги */
@@ -262,18 +268,23 @@ body {
 }
 
 .main-title.services {
-  margin-bottom: 56px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
-.container.services {
-  margin-bottom: 135px;
+.our-services {
+  margin-bottom: 94px;
 }
 
 /* Наша команда */
+.our-team {
+  padding-bottom: 94px;
+  
+  background-color: var(--buttons-background);
+}
 
 .container.team {
-  background-color: var(--buttons-background);
-  margin-bottom: 94px;
+  margin-bottom: 0;
   margin-top: 0;
 
   text-align: center;
@@ -289,12 +300,14 @@ body {
 .team-card {
   margin-left: 30px;
   
+  border-color: ;
   background-color: white;
 }
 
 .main-title.team {
-  margin-bottom: 50px;
   padding-top: 94px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 
@@ -336,7 +349,6 @@ body {
 }
 
 .address {
-  margin-top: 20px;
 
   color: #ffffff;
   font-size: 14px;
@@ -346,10 +358,11 @@ body {
 
 .full-footer {
   padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .footer-item + .footer-item{
-  margin-top: 9px;
+  padding-top: 9px;
 }
 
 .address .mail,
@@ -367,7 +380,19 @@ body {
 
 /* Старница портфолио */
 
+/* Хедер */
+
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* Фильтры наших работ - кнопки */
+
+.filter-our-works {
+  margin-top: 71px;
+  margin-bottom: 94px;
+}
+
 .container .filter-btn {
   padding-left: 0;
   padding-right: 0;
@@ -376,8 +401,9 @@ body {
 
 .filter-buttons.list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 56px;
   justify-content: center;
 
 }
@@ -415,8 +441,7 @@ body {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
-
+  
   text-align: left;
 }
 
@@ -427,14 +452,21 @@ body {
 }
 
 .projects.list .project {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 4px;
 }
 
 .project-info {
-  margin-top: 4px;
+  margin-top: 0px;
   margin-bottom: 0;
-  padding-bottom: 20px;
+}
+
+.project-item {
+  padding: 20px 24px;
+
+  border: 1px solid #EEEEEE;
+
 }
 
 .projects .project {
